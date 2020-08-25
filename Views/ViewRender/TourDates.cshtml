@@ -1,0 +1,21 @@
+@model ViewLecture.ViewModels.BandTourDates;
+
+<h1>Tour Dates</h1>
+
+<h2>@Model.Band.BandName</h2>
+
+<h4>Upcoming Dates</h4>
+
+@* @if (@Model.TourDates.Count > 0)
+{ *@
+    @foreach (TourDate t in @Model.TourDates)
+    {
+        <p>
+            @t.ShowDate @t.ShowCity
+        </p>
+    }
+@* }
+else
+{
+    <h4>No tour dates currently scheduled!</h4>
+} *@
